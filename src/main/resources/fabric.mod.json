@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "chatlink-fabric",
+  "version": "${version}",
+  "name": "Chatlink",
+  "description": "Sends Minecraft Chat events to a webhook sink.",
+  "authors": [
+    "pyratic"
+  ],
+  "contact": {
+    "homepage": "https://github.com/tyush/chatlink",
+    "issues": "https://github.com/tyush/chatlink/issues",
+    "sources": "https://github.com/tyush/chatlink"
+  },
+  "license": "MIT",
+  "icon": "assets/chatlink/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "com.pyratic.chatlink.Chatlink"
+      }
+    ]
+  },
+  "mixins": [
+    "chatlink.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${fabricloader}",
+    "fabric-api": ">=${fabric_api}",
+    "fabric-language-kotlin": ">=${fabric_language_kotlin}",
+    "minecraft": ">=${minecraft}",
+    "java": ">=${java}"
+  }
+}

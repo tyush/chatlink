@@ -1,2 +1,2 @@
-# Example Mod
-This is an example mod for Kotlin.
+# ChatLink
+Links your Minecraft Server's chat to your favorite Discord channel - or anything that can parse web events.
